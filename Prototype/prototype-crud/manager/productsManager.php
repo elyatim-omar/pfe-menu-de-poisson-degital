@@ -4,14 +4,14 @@ require_once('../model/product.php');
 
 class ProductsManager extends Manager {
 	public function get($id){
-		$req = "SELECT * FROM salles WHERE id = $id";
+		$req = "SELECT * FROM schoolstudents WHERE id = $id";
 		$row = $this->executerRequete($req, array($id))->fetch();
 		return new Product($row);
 	}
 	
 	public function getList(){
 		$stack = array();
-		$req = 'SELECT * FROM salles';
+		$req = 'SELECT * FROM schoolstudents';
 		$result = $this->executerRequete($req)->fetchAll();
 		foreach ($result as $row){
 			$itm = new Product($row);

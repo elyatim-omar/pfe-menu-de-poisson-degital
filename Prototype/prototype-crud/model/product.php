@@ -5,7 +5,7 @@ class Product implements JsonSerializable {
     {
         return array(
              'id' => $this->_id,
-             'numero' => $this->_numero,
+             'name' => $this->_numero,
              'capacite' => $this->_capacite,
              'nb_tableaux' => $this->_nb_tableaux,
              'formateur' => $this->_formateur,
@@ -25,7 +25,7 @@ class Product implements JsonSerializable {
 	public function array_fill( $data)
 	{
 		$this->setId ($data["id"]);
-		$this->setnumero ($data["numero"]);
+		$this->setnumero ($data["name"]);
 		$this->setcapacite ($data["capacite"]);
 		$this->setnb_tableaux ($data["nb_tableaux"]);
 		$this->setformateur ($data["formateur"]);

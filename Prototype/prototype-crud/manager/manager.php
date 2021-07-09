@@ -15,7 +15,7 @@ class Manager {
     protected function getBdd() {
         if ($this->bdd == null) {
             $this->bdd = new PDO('mysql:host=localhost;dbname=schoolstd',
-                    'root', 'root2021',
+                    'root', 'solicode24',
                     array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
         return $this->bdd;
