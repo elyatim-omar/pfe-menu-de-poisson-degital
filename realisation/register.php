@@ -5,7 +5,6 @@
 
 	$account = new Account($con);
 
-	include("includes/handlers/register-handler.php");
 	include("includes/handlers/login-handler.php");
 
 	function getInputValue($name) {
@@ -49,7 +48,7 @@
 					<div class="vertical-middle">
 						<div class="container-fluid py-5 mx-auto">
 							<div class="center">
-								<a href="index.html"><img style="width: 10%; height: 10%;" src="demos/restaurant/images/logosamak.png" alt="Canvas Logo"></a>
+								<a href="index.html"><img  src="demos/restaurant/images/logosamak.png" alt="Canvas Logo"></a>
 							</div>
 
 							<div class="card mx-auto rounded-0 border-0" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
