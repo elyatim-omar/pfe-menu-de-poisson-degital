@@ -27,13 +27,12 @@ class CrudProduct extends React.Component {
     //add product
     addproduct(e) {
         $.ajax({
-            url: "/api/addProduct.php",
+            url: "api/addProduct.php",
             method: "POST",
             data: {
-                Firstname: Firstname.value,
-                Lastname: Lastname.value,
-                Matricule: Matricule.value,
-                Email: Email.value,
+                nom: Firstname.value,
+                prix: Lastname.value,
+              
             },
             success: function (data) {
                 this.chargementDonnees()
@@ -131,19 +130,8 @@ class CrudProduct extends React.Component {
                                         </div>
                                     </div>
 
-                                    <div className="form-row">
-                                        <div className="form-group col-12">
-                                            <label htmlFor="inputMatricule4">Matricule</label>
-                                            <input type="number" className="form-control Matricule" id="Matricule" placeholder="Matricule" />
-                                        </div>
-                                    </div>
 
-                                    <div className="form-row">
-                                        <div className="form-group col-12">
-                                            <label htmlFor="inputEmail4">Email</label>
-                                            <input type="email" className="form-control Email" id="Email" placeholder="Email" />
-                                        </div>
-                                    </div>
+                                  
 
                                     <div className="input-group text-right">
                                         <div className="input-group-btn">
@@ -164,9 +152,7 @@ class CrudProduct extends React.Component {
                             <th scope="col">Firstname</th>
                             <th scope="col">Lastname</th>
                             <th scope="col">Matricule</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">update</th>
-                            <th scope="col">delete</th>
+                           
 
 
                         </tr>
