@@ -149,9 +149,11 @@ class CrudProduct extends React.Component {
                 <table className="table table-hover">
                     <thead className="thead">
                         <tr>
-                            <th scope="col">Firstname</th>
-                            <th scope="col">Lastname</th>
-                            <th scope="col">Matricule</th>
+                            <th scope="col">nom</th>
+                            <th scope="col">prix</th>
+                            <th scope="col">image</th>
+                            <th scope="col">Delete</th>
+                            <th scope="col">Update</th>
                            
 
 

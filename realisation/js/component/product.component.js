@@ -10,8 +10,13 @@ class Product extends React.Component {
               <td scope="row">{this.props.product.Firstname}</td>
               <td>{this.props.product.Lastname}</td>
               <td>{this.props.product.Matricule}</td>
-              <td>{this.props.product.Email}</td>
-              <td></td>
+              
+              <td> <button type="button" className="btn btn-danger ml-4" onClick={this.props.onClickClose}>
+            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-person-x-fill" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+          </td>
               <td>
           <button type="button" className="btn btn-success ml-5" onClick={this.props.onClickUpdate}>
             <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-pencil-square " viewBox="0 0 16 16">
@@ -19,11 +24,7 @@ class Product extends React.Component {
               <path fillRule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
             </svg>
           </button>
-          <button type="button" className="btn btn-danger ml-4" onClick={this.props.onClickClose}>
-            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-person-x-fill" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
-            </svg>
-          </button>
+         
           </td>
                 </tr>
 
