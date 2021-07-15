@@ -6,7 +6,7 @@ class productsManager {
 	public function getList(){
 		$dbh = new PDO("mysql:host=localhost;dbname=menupoisson","root","solicode24");
 		$stack = array();
-		$req = "SELECT * FROM poisson";
+		$req = "SELECT * FROM poissons";
 		$result = $dbh->query($req)->fetchAll();
 		foreach ($result as $row){
 			$item = new Product();
@@ -22,7 +22,7 @@ class productsManager {
 //Add Product
 		public function add($product){
 			$dbh = new PDO("mysql:host=localhost;dbname=menupoisson","root","solicode24");
-			$req = "INSERT INTO `poisson`(`id`,`nom`, `prix`) VALUES (:id,:nom,:prix)";
+			$req = "INSERT INTO `poissons`(`id`,`nom`, `prix`) VALUES (:id,:nom,:prix)";
 
 			$updateProductQuery = $dbh ->prepare($req);
 			$updateProductQuery -> bindParam(":id",$product->getId(),PDO::PARAM_STR);	
@@ -36,7 +36,7 @@ class productsManager {
 		public function delete($id){
 			$dbh = new PDO("mysql:host=localhost;dbname=menupoisson","root","solicode24");
 
-			$req = "DELETE FROM poisson WHERE id = $id";
+			$req = "DELETE FROM poissons WHERE id = $id";
 			$deleteProduct = $dbh->prepare($req);
             $deleteProduct->execute();
         }
@@ -44,7 +44,7 @@ class productsManager {
 		public function update($product){
 			$id = $product->getId();
 			$dbh = new PDO("mysql:host=localhost;dbname=menupoisson","root","solicode24");
-			$req = "UPDATE poisson SET nom = :nom,prix = :prix WHERE id = $id";
+			$req = "UPDATE poissons SET nom = :nom,prix = :prix WHERE id = $id";
 			$updateProductQuery = $dbh ->prepare($req);
 			$updateProductQuery -> bindParam(":nom",$product->getName(),PDO::PARAM_STR);
             $updateProductQuery -> bindParam(":prix",$product->getLast(),PDO::PARAM_STR);

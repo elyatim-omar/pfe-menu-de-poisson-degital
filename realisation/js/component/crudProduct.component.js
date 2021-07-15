@@ -32,7 +32,7 @@ class CrudProduct extends React.Component {
             data: {
                 nom: Firstname.value,
                 prix: Lastname.value,
-              
+
             },
             success: function (data) {
                 this.chargementDonnees()
@@ -63,11 +63,10 @@ class CrudProduct extends React.Component {
             url: "api/updateProduct.php",
             method: "POST",
             data: {
-                id : i,
+                id: i,
                 Firstname: Firstname.value,
                 Lastname: Lastname.value,
-                Matricule: Matricule.value,
-                Email: Email.value,
+
             },
             success: function (data) {
                 this.chargementDonnees()
@@ -93,7 +92,7 @@ class CrudProduct extends React.Component {
                     key={product.id}
                     product={product}
                     onClickClose={this.removeproduct.bind(this, product.id)}
-                    onClickUpdate= {this.updateproduct.bind(this,product.id)}
+                    onClickUpdate={this.updateproduct.bind(this, product.id)}
                 />
             )
         })
@@ -130,13 +129,19 @@ class CrudProduct extends React.Component {
                                         </div>
                                     </div>
 
+                                    <div className="form-groupe">
+                                        <div className="col-12">
+                                            <label htmlFor="photo">photo</label>
+                                            <input type="file" name="photo" className="form-control" id="photo" />
+                                        </div>
+                                    </div>
 
-                                  
+
 
                                     <div className="input-group text-right">
                                         <div className="input-group-btn">
-                                        <button type="submit" className="btn btn-primary submit ">AJOUTER OUVRIER</button>
- 
+                                            <button type="submit" className="btn btn-primary submit ">AJOUTER</button>
+
                                         </div>
                                     </div>
                                 </form>
@@ -154,7 +159,7 @@ class CrudProduct extends React.Component {
                             <th scope="col">image</th>
                             <th scope="col">Delete</th>
                             <th scope="col">Update</th>
-                           
+
 
 
                         </tr>
