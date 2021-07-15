@@ -15,8 +15,8 @@ $(document).ready(function () {
           <img src="uploads/${studentsList[i]["img"]}" alt="1" class="rounded">
           <div class="portfolio-desc pt-2"><h4 class="mb-1">
            ${studentsList[i]["nom"]}
-        </h4><div class="item-price">&dollar;
-        ${studentsList[i]["prix"]}
+        </h4><div class="item-price">
+        ${studentsList[i]["prix"]} DH
         </div></div></div></div>
         `);
 
