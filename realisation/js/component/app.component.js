@@ -49,9 +49,7 @@ class App extends React.Component {
         </div>
         {/* /.content-wrapper */}
         <footer className="main-footer">
-          <div className="float-right d-none d-sm-block">
-            <b>Version</b> 3.1.0
-          </div>
+      
           <strong>Copyright © 2020-2021 <a href="#">SAMAK</a>.</strong> All rights reserved.
         </footer>
         {/* Control Sidebar */}
