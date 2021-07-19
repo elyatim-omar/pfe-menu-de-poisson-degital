@@ -12,7 +12,7 @@ $(document).ready(function () {
           $(".menuList").append(`
           <div class="col-lg-3 col-md-6">
           <div class="portfolio-item">
-          <img src="uploads/${studentsList[i]["img"]}" alt="1" class="rounded">
+          <img src="uploads/fish.jpg" alt="1" class="rounded">
           <div class="portfolio-desc pt-2"><h4 class="mb-1">
            ${studentsList[i]["nom"]}
         </h4><div class="item-price">

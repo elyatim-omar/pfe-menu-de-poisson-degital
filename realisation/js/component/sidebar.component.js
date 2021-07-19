@@ -6,11 +6,11 @@ class SideBar extends React.Component {
     render() {
 
         return (
-            <aside className="main-sidebar sidebar-dark-primary elevation-4">
+            <aside className="main-sidebar sidebar-light-primary elevation-4">
             {/* Brand Logo */}
-            <a href="../../index3.html" className="brand-link">
-              <img src="demos/restaurant/image/logosamak.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} />
-              <span className="brand-text font-weight-light">Systeme Pointage</span>
+            <a href="#" className="brand-link">
+              SAMAK
+              
             </a>
             {/* Sidebar */}
             <div className="sidebar">
@@ -30,8 +30,8 @@ class SideBar extends React.Component {
                  with font-awesome or any other icon font library */}
                   <li className="nav-item">
                     <a href="includes/handlers/logout.php" className="nav-link">
-                      <i className="nav-icon fas fa-tachometer-alt" />
-                      <p>logout</p>
+                      <i className="fa fa-sign-out" aria-hidden="true"/>
+                      <p>  logout</p>
                     </a>
                   </li>
                 </ul>

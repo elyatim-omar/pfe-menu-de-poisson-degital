@@ -24,12 +24,12 @@ class productsManager {
 			$dbh = new PDO("mysql:host=localhost;dbname=menupoisson","root","solicode24");
 			$req = "INSERT INTO `poissons`(`id`,`nom`, `prix`) VALUES (:id,:nom,:prix)";
 
-			$updateProductQuery = $dbh ->prepare($req);
-			$updateProductQuery -> bindParam(":id",$product->getId(),PDO::PARAM_STR);	
-			$updateProductQuery -> bindParam(":nom",$product->getName(),PDO::PARAM_STR);
-            $updateProductQuery -> bindParam(":prix",$product->getLast(),PDO::PARAM_STR);
+			$addProductQuery = $dbh ->prepare($req);
+			$addProductQuery -> bindParam(":id",$product->getId(),PDO::PARAM_STR);	
+			$addProductQuery -> bindParam(":nom",$product->getName(),PDO::PARAM_STR);
+            $addProductQuery -> bindParam(":prix",$product->getLast(),PDO::PARAM_STR);
         
-			$updateProductQuery->execute();
+			$addProductQuery->execute();
         }
 		// delete product
 

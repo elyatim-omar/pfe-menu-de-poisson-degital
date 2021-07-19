@@ -38,8 +38,7 @@ function getall(){
 $(".submit").click(function() {
     var Fname = $(".Firstname").val();
     var Lname = $(".Lastname").val();
-    var Matricule = $(".Matricule").val();
-    var Email = $(".Email").val();
+  
   
     $.ajax({
       url:"api/addProduct.php",
@@ -47,8 +46,7 @@ $(".submit").click(function() {
       data:{
         Firstname :Fname,
         Lastname :Lname,
-        Matricule :Matricule,
-        Email :Email,
+       
       },
       success:function(data) {
       getall();

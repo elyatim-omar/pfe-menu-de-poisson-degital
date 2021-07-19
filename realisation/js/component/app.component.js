@@ -52,7 +52,7 @@ class App extends React.Component {
           <div className="float-right d-none d-sm-block">
             <b>Version</b> 3.1.0
           </div>
-          <strong>Copyright © 2020-2021 <a href="https://solicode.co">Solicode</a>.</strong> All rights reserved.
+          <strong>Copyright © 2020-2021 <a href="#">SAMAK</a>.</strong> All rights reserved.
         </footer>
         {/* Control Sidebar */}
         <aside className="control-sidebar control-sidebar-dark">

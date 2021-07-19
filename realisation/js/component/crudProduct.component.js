@@ -104,7 +104,7 @@ class CrudProduct extends React.Component {
                     <div className="modal-dialog modal-dialog-centered" role="document">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalCenterTitle">Ajouter Ouvrier</h5>
+                                <h5 className="modal-title" id="exampleModalCenterTitle">Ajouter poissons</h5>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -118,23 +118,18 @@ class CrudProduct extends React.Component {
 
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputName4">First Name</label>
-                                            <input type="text" className="form-control Firstname" id="Firstname" placeholder="First name" />
+                                            <label htmlFor="inputName4">Nom</label>
+                                            <input type="text" className="form-control Firstname" id="Firstname" placeholder="Nome" required/>
                                         </div>
                                     </div>
                                     <div className="form-row">
                                         <div className="col-12">
-                                            <label htmlFor="inputLast4">Last Name</label>
-                                            <input type="text" className="form-control Lastname" id="Lastname" placeholder="Last name" />
+                                            <label htmlFor="inputLast4">Prix</label>
+                                            <input type="number" className="form-control Lastname" id="Lastname" placeholder="Prix" required/>
                                         </div>
                                     </div>
 
-                                    <div className="form-groupe">
-                                        <div className="col-12">
-                                            <label htmlFor="photo">photo</label>
-                                            <input type="file" name="photo" className="form-control" id="photo" />
-                                        </div>
-                                    </div>
+                                
 
 
 
@@ -156,9 +151,8 @@ class CrudProduct extends React.Component {
                         <tr>
                             <th scope="col">nom</th>
                             <th scope="col">prix</th>
-                            <th scope="col">image</th>
                             <th scope="col">Delete</th>
-                            <th scope="col">Update</th>
+                           
 
 
 
